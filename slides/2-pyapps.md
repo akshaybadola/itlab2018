@@ -2,9 +2,10 @@
 
 ## First we'll look at some regular expression
 ## Then we'll try some exercises 
-## These are not really exercises on data but learning how to do 
-## such things will be handy in the long run
-##
+
+### These are not really exercises on data but learning how to do 
+### such things will be handy in the long run
+
 
 1. Build a regular expression to match all pdf links in an html page
 	   Note, that a link will start with <a href=...> and end with </a>
@@ -35,8 +36,8 @@
 ## Then we'll try the following exercises ##
 
 #### 1. Write a python program that takes a file as an argument and treats that as the config file
-#### If the file/path doesn't exist, it is created and a default skeleton is created, else it is
-#### read and parsed. The configuration file can hold keyword entries with sections, e.g.
+If the file/path doesn't exist, it is created and a default skeleton is created, else it is
+read and parsed. The configuration file can hold keyword entries with sections, e.g.
 
 ```Ini
 [general]
