@@ -6,20 +6,23 @@
 ## such things will be handy in the long run
 ##
 
-0.1. Build a regular expression to match all pdf links in an html page
+1. Build a regular expression to match all pdf links in an html page
 	   Note, that a link will start with <a href=...> and end with </a>
-0.2. Build a regular expression to match all sentences which begin with 'The'.
+2. Build a regular expression to match all sentences which begin with 'The'.
 	   You'd have to match till the first full stop occurs.
-0.3. Build a regular expression that matches numbers, including letters in numbers
+3. Build a regular expression that matches numbers, including letters in numbers
 	   but only if occurs at the end of a line. e.g.
 	   
 		   There is a light that never goes out 12345blah2343
-matches
-0.4. Write a python program to split a text file at dates where a date is
+will match but
+		
+		There is not a light that doesn't go 12324 etc
+won't match		
+4. Write a python program to split a text file at dates where a date is
 	   expected to be of type 'yyyy-mm-dd', e.g. '2014-02-20'
-0.5. Write a python program that takes a url and gets all the urls it points to
+5. Write a python program that takes a url and gets all the urls it points to
 	   Use urllib3.
-0.6. Write a python program that takes a date as input and gives you the
+6. Write a python program that takes a date as input and gives you the
 	   corresponding Dilbert comic.
 
 ## Then we'll try the following exercises ##
