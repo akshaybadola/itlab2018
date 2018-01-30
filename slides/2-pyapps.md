@@ -22,11 +22,13 @@
 	won't match		
 
 4. Write a python program to split a text file at dates where a date is
-	   expected to be of type 'yyyy-mm-dd', e.g. '2014-02-20'
+	   expected to be of type 'yyyy-mm-dd', e.g. '2014-02-20', so that you have
+	   all the data below a certain date.
 5. Write a python program that takes a url and gets all the urls it points to
 	   Use urllib3.
 6. Write a python program that takes a date as input and gives you the
-	   corresponding Dilbert comic.
+	   corresponding Dilbert comic, for a representative comic see this link
+	   http://dilbert.com/strip/2015-12-04
 
 ## Then we'll try the following exercises ##
 
