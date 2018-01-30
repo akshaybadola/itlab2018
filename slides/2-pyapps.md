@@ -20,13 +20,13 @@ bitrate = 480
 ### 2. Open the link: https://github.com/brmson/dataset-sts/data/sts/sick2014
 ### There is a SICK_train.txt file here which contains sentence pairs. You can read the
 ### corresponding readme.txt and see how what the format of the data is.
-###   1. A first step in any process is to clean the data.
-###     * Which steps would you take to clean the data?
-###     * Of which things would the data be cleaned?
-###   2. Second step would be to transform the data into a form that is efficient.
-###     * Why isn't the data efficient in this form?
-###     * To which forms can it be changed?
-###     * What else needs to be done for this language data?
+### 1. A first step in any process is to clean the data.
+###   - Which steps would you take to clean the data?
+###   - Of which things would the data be cleaned?
+### 2. Second step would be to transform the data into a form that is efficient.
+###   - Why isn't the data efficient in this form?
+###   - To which forms can it be changed?
+###   - What else needs to be done for this language data?
 ### Write a Python program that performs the requisite steps.
 
 
