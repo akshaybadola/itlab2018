@@ -8,7 +8,7 @@
 
 
 1. Build a regular expression to match all pdf links in an html page
-	   Note, that a link will start with <a href=...> and end with </a>
+	   Note, that a link will start with \<a href=...\> and end with \</a\>
 
 2. Build a regular expression to match all sentences which begin with 'The'.
 	   You'd have to match till the first full stop occurs.
