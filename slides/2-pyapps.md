@@ -27,8 +27,10 @@
 5. Write a python program that takes a url and gets all the urls it points to
 	   Use urllib3.
 6. Write a python program that takes a date as input and gives you the
-	   corresponding Dilbert comic, for a representative comic see this link
-	   http://dilbert.com/strip/2015-12-04
+	   corresponding Dilbert comic, for a representative comic see this link.
+	   http://dilbert.com/strip/2014-09-16
+   The problem occurs because the url has to be parsed which goes to a cdn
+   and the image has to be fetched from there. Good Luck!!
 
 ## Then we'll try the following exercises ##
 
