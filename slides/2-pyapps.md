@@ -16,7 +16,7 @@
 	   but only if occurs at the end of a line. e.g.
 	   
 		   There is a light that never goes out 12345blah2343
-	   will match but
+    will match but
 		
 		There is not a light that doesn't go 12324 etc
 	won't match		
