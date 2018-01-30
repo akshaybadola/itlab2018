@@ -2,9 +2,9 @@
 
 ## Today we'll try the following exercises ##
 
-### 1. Write a python program that takes a file as an argument and treats that as the config file
-### If the file/path doesn't exist, it is created and a default skeleton is created, else it is
-### read and parsed. The configuration file can hold keyword entries with sections, e.g.
+#### 1. Write a python program that takes a file as an argument and treats that as the config file
+#### If the file/path doesn't exist, it is created and a default skeleton is created, else it is
+#### read and parsed. The configuration file can hold keyword entries with sections, e.g.
 
 ```Ini
 [general]
@@ -28,5 +28,3 @@ bitrate = 480
 ####   - To which forms can it be changed?
 ####   - What else needs to be done for this language data?
 #### Write a Python program that performs the requisite steps.
-
-
