@@ -1,8 +1,8 @@
+{% include _includes/scripts.html %}
+
 # Threads, Generators and pdb #
 
 ## We'll take a look at the **threading** and **pdb** and try some exercises ##
-
- {% include _includes/scripts.html %}
 
 You can take a look at the **threading** module for the python standard library.
 <https://docs.python.org/3/library/threading.html>
