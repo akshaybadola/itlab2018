@@ -4,13 +4,13 @@ description: "These are the notes and exercises for the ITLAB 2018, for SCIS, Uo
 include: _includes/scripts.html
 
 # # Where things are
-# source:          .
+source:          .
 # destination:     ./_site
 # collections_dir: .
 # plugins_dir:     _plugins
 # layouts_dir:     _layouts
 # data_dir:        _data
-# includes_dir:    _includes
+includes_dir:    _includes
 # collections:
 #   posts:
 #     output:   true
