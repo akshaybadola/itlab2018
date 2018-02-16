@@ -113,8 +113,8 @@ We won't deal with all of those here, as Deadlocks and Race Conditions can be so
 Synchronization is one thing which we'll see how to deal with in python3.
 
 Consider a scenario of a Client-Server response type mechanism:
-- There are k servers and each can serve at most m clients at a time. (In the general case it would be \$\$m_1, m_2, ..., m_k\$\$, one value for each server)
-- Consider a fact that you want at most \$\$n < km\$\$ threads to be active at any given moment.
+- There are k servers and each can serve at most m clients at a time. (In the general case it would be $$m_1, m_2, ..., m_k$$, one value for each server)
+- Consider a fact that you want at most $$n < km$$ threads to be active at any given moment.
 - You'd have  to keep track of which of the threads are active and assign them tasks as the client requests come in to the servers.
 
 ```python
@@ -257,7 +257,7 @@ def firstn(n):
 sum_of_first_n = sum(firstn(1000000))
 ```
 
-The above funtion definition simply generates a list till \$\$n\$\$. To sum up such a list, such a list will first have to
+The above funtion definition simply generates a list till $$n$$. To sum up such a list, such a list will first have to
 exist and then be summed up. You can also realize that the list doesn't really have to exist to compute the sum, nor to
 use the values of the list in any other scenario. The only condition is that the numbers must be produced in
 sequence. Such a sequence is encapsulated in the _iterable_ pattern.
