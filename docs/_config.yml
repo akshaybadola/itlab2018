@@ -7,6 +7,7 @@ kramdown:
     syntax_highlighter: rogue
 title: "IT Lab 2018"
 description: "These are the notes and exercises for the ITLAB 2018, for SCIS, UoH."
+
 ---
  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML
 ---
