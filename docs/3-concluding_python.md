@@ -1,5 +1,5 @@
 ---
-title: Concluding Python
+title: IT Lab 2018 | Concluding Python
 ---
 
 # Threads, Generators and pdb #
@@ -316,3 +316,7 @@ do modifications like rotate images or switch the color channels.
 ### Advanced exercise
 - **Write a generator which takes a set of images and crops random fixed sized patches from a random subset, normalizes
   them (subtracts by the mean and divides by the standard deviation) and returns it.**
+
+## Nuances of Threading in Python ##
+
+So far we've used the **threading** library in python
