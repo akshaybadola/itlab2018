@@ -2,7 +2,7 @@ These are the notes and exercises for the ITLAB 2018, for SCIS, UoH.
 
 [Session 1: Intro to Python](https://github.com/akshaybadola/itlab2018/blob/master/slides/1-Intro.pdf)
 is currently in pdf, though the rest of the sessions are and will be
-in markdown format. Currently testing raw markdown as well (./1-Intro.md)
+in markdown format. Currently testing raw markdown as well [](./1-Intro.md)
 
 [Session 2: More Python](./2-pyapps.md)
 Regular Expressions and some file and URL handling.
