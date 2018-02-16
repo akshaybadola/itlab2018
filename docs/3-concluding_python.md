@@ -1,3 +1,6 @@
+---
+ - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML
+---
 # Threads, Generators and pdb #
 
 ## We'll take a look at the **threading** and **pdb** and try some exercises ##
