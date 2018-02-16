@@ -1,6 +1,7 @@
 theme: jekyll-theme-slate
 markdown: kramdown
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  math_engine: mathjax
+    input: GFM
+    hard_wrap: false
+title: "IT Lab 2018"
+description: "These are the notes and exercises for the ITLAB 2018, for SCIS, UoH."
