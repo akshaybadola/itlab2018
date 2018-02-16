@@ -2,6 +2,12 @@
 
 ## We'll take a look at the **threading** and **pdb** and try some exercises ##
 
+
+The following should be a math block:
+
+$$\lambda_i=\lambda_j$$
+
+
 You can take a look at the **threading** module for the python standard library.
 <https://docs.python.org/3/library/threading.html>
 
@@ -253,11 +259,6 @@ def firstn(n):
 
 sum_of_first_n = sum(firstn(1000000))
 ```
-$$\lambda_i=\lambda_j$$
-
-\$$\lambda_i=\lambda_j$$
-
-\$\$\lambda_i=\lambda_j$$
 
 The above funtion definition simply generates a list till $$n$$. To sum up such a list, such a list will first have to
 exist and then be summed up. You can also realize that the list doesn't really have to exist to compute the sum, nor to
