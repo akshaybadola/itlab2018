@@ -7,6 +7,8 @@ The following should be a math block:
 
 $$\lambda_i=\lambda_j$$
 
+But it's not, it's just not \$$ 5 + 5 $$
+
 
 You can take a look at the **threading** module for the python standard library.
 <https://docs.python.org/3/library/threading.html>
