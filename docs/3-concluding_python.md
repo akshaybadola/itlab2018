@@ -255,6 +255,10 @@ sum_of_first_n = sum(firstn(1000000))
 ```
 $$\lambda_i=\lambda_j$$
 
+\$$\lambda_i=\lambda_j$$
+
+\$\$\lambda_i=\lambda_j$$
+
 The above funtion definition simply generates a list till $$n$$. To sum up such a list, such a list will first have to
 exist and then be summed up. You can also realize that the list doesn't really have to exist to compute the sum, nor to
 use the values of the list in any other scenario. The only condition is that the numbers must be produced in
