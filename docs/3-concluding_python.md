@@ -332,4 +332,4 @@ The module has nearly all functions corresponding to that of the
 more expensive than threads. Refer to links for further reading.
 
 ### Threading v Multiprocessing exercise
-For a client server architecture mentioned earlier, 
+- **For a client server architecture mentioned earlier, convert the program to use the multiprocessing module**.
