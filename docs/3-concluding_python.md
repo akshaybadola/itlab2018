@@ -10,7 +10,7 @@ You can take a look at the **threading** module for the python standard library.
 
 The primary way to create a thread from the library is the **Thread** class
 
-```Python
+```python
 from threading import Thread
 # or import threading.Thread
 ```
@@ -24,7 +24,7 @@ them.
 
 Python's Thread class requires a target function to run and you need to start it explicitly.
 
-```Python
+```python
 from threading import Thread
 
 def foo(a=None, b=None, c=None):
@@ -49,7 +49,7 @@ The above is a simple example of thread creation. To spawn multiple threads for 
 call them. The following code does that.
 
 
-```Python
+```python
 from threading import Thread
 
 def foo(a=None, b=None, c=None):
@@ -76,7 +76,7 @@ for t in threads:
 ```
 Moving on... So how do we know they're actually running? Let's create another function _goo_ that does nothing.
 
-```Python
+```python
 from time import sleep
 
 def goo():
@@ -114,7 +114,7 @@ Consider a scenario of a Client-Server response type mechanism:
 - Consider a fact that you want at most $n < km$ threads to be active at any given moment.
 - You'd have  to keep track of which of the threads are active and assign them tasks as the client requests come in to the servers.
 
-```Python
+```python
 class Server:
     def __init__(self, max):
         self.__max_requests = max
@@ -146,7 +146,7 @@ class Client:
   method in a random order and at random times. Adapt the following code to implement random requests. You have to find
   out which server has the least load and you have to fill in all the required code.**
 
-```Python
+```python
 # We want to have 5 servers, each of which can handle 5 requests at a time
 # We have 100 clients, who each request randomly, and they're handled in FCFS manner
 
@@ -169,7 +169,7 @@ for i in range(1000):
 A debugger can be a program or a module which inspects the code as it runs and keeps track of the function calls and the
 variables present. Debugging in python is done by breaking into the code at runtime with pdb.
 
-```Python
+```python
 import pdb
 
 pdb.run('foo()')
@@ -184,7 +184,7 @@ You can break into the code where you know the error is going to occur by using 
 
 Inside the python debugger if an error occurs, you'll have an access to a debugging console.
 
-```Python
+```python
 (Pdb) help
 Documented commands (type help <topic>):
 ========================================
@@ -242,7 +242,7 @@ For all these purposes, you have to use the **iterator** pattern.  You can make 
 functions to it: `__iter__` and `__next__`.
 
 Consider the following code
-```Python
+```python
 # Build and return a list
 def firstn(n):
     num, nums = 0, []
@@ -259,7 +259,7 @@ exist and then be summed up. You can also realize that the list doesn't really h
 use the values of the list in any other scenario. The only condition is that the numbers must be produced in
 sequence. Such a sequence is encapsulated in the _iterable_ pattern.
 
-```Python
+```python
 # Using the generator pattern (an iterable)
 class firstn(object):
     def __init__(self, n):
@@ -283,7 +283,7 @@ The above code implements the two required functions and now the the type **firs
 required for a loop to run. However, the code above can be simplified significantly as for many situations a lot of the
 tasks are similar. For that we have **generators**. The below code accomplishes the same task as the above one:
 
-```Python
+```python
 # a generator that yields items instead of returning a list
 def firstn(n):
     num = 0
