@@ -174,13 +174,13 @@ import pdb
 
 pdb.run('foo()')
 ```
-For scripts you can attach pdb to the python process by invoking the python command with ```-m``` switch.
+For scripts you can attach pdb to the python process by invoking the python command with `-m` switch.
 
 ```Bash
 python3 -m pdb myscript.py
 ```
 
-You can break into the code where you know the error is going to occur by using ```pdb.set_trace()```
+You can break into the code where you know the error is going to occur by using `pdb.set_trace()`
 
 Inside the python debugger if an error occurs, you'll have an access to a debugging console.
 
@@ -218,14 +218,14 @@ Above are the list of commands available to you in the debugger and you can seek
 
 Generally the things you'll do is:
 - Inspect the value of a variable.
-  That you can do by simply typing the name of the variable at the prompt. Or using a ```print(var)```.
+  That you can do by simply typing the name of the variable at the prompt. Or using a `print(var)`.
 - Evaluate an expression:
   You can do things like perform any expression w.r.t. to any variables present in that scope.
   You can call a function if it exists in the current scope.
-  You can of course always print the current variables in scope  at any interpreter with the ```dir()``` function and use its output.
-- You can go up and down in the calling stack by using ```u``` and ```d``` commands.
-- You can print the source at the current scope with ```l```.
-- You can continue execution with ```c``` or restart with ```r```.
+  You can of course always print the current variables in scope  at any interpreter with the `dir()` function and use its output.
+- You can go up and down in the calling stack by using `u` and `d` commands.
+- You can print the source at the current scope with `l`.
+- You can continue execution with `c` or restart with `r`.
 
 Generally with small code i.e. below a 1000 LOC, it isn't usually that difficult to debug, but if your codebase grows
 above that, you'll need to learn how to use  the debugger.
@@ -239,7 +239,7 @@ were looping over an infinite structure? What if you want to iterate over the sa
 What if you wanted to create a sequence instead of iterating over a fixed sequence?
 
 For all these purposes, you have to use the **iterator** pattern.  You can make any class _iterable_ by adding two
-functions to it: ```__iter__``` and ```__next__```.
+functions to it: `__iter__` and `__next__`.
 
 Consider the following code
 ```Python
@@ -300,7 +300,7 @@ before we start to use them. This is similar to the benefits provided by iterato
 iterators easy."
 
 Basically the generator object is now producing the numbers on demand instead of from a fixed object. The key part in
-the generator is the ```yield()``` method which is equivalent to the ```__next__``` method of the _iterator_.
+the generator is the `yield()` method which is equivalent to the `__next__` method of the _iterator_.
 
 - **Write a generator function which generates an infinite sequence of random numbers between two given numbers.**
   **How will you use it? When will such a sequence stop?**
