@@ -314,7 +314,7 @@ do modifications like rotate images or switch the color channels.
 
 ### Advanced exercise
 - **Write a generator which takes a set of images and crops random fixed sized patches from a random subset, normalizes
-  them (subtracts by the mean and divides by the standard deviation) and returns it.**
+  them (subtracts by the mean and divides by the standard deviation) and returns it. Use pillow for the image processing tasks**
 
 ## Nuances of Threading in Python ##
 
@@ -323,4 +323,14 @@ light weight concurrency. However, there would be issues with running
 multiple threads on the Python interpreter as it is not
 thread-safe. <https://docs.python.org/3/c-api/init.html#thread-state-and-the-global-interpreter-lock>
 
-Threads created 
+Threads created in python are useful for concurrency but they don't
+provide actual parallelism. For that only process based concurrency is
+available for which we can use the **multiprocessing** module
+<https://docs.python.org/3/library/multiprocessing.html>.
+
+The module has nearly all functions corresponding to that of the
+**threading** library, however it spawns actual processes which are
+more expensive than threads. Refer to links for further reading.
+
+### Threading v Multiprocessing exercise
+For a client server architecture mentioned earlier, 
