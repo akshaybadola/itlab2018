@@ -1,6 +1,4 @@
----
 {% include scripts.html %}
----
 
 # Threads, Generators and pdb #
 
