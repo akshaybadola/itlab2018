@@ -253,11 +253,20 @@ def firstn(n):
 
 sum_of_first_n = sum(firstn(1000000))
 ```
+
+Why doesn't this stupid thing display math?
+
 $$ m_1, m_2, m_3, ... , m_n $$
+
+ugh ugh 
 
 \$$ m_1, m_2, m_3, ... , m_n $$
 
+mugh mugh 
+
 \$\$ m_1, m_2, m_3, ... , m_n $$
+
+Crappy crap.
 
 The above funtion definition simply generates a list till $$n$$. To sum up such a list, such a list will first have to
 exist and then be summed up. You can also realize that the list doesn't really have to exist to compute the sum, nor to
