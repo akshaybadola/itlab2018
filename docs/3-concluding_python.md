@@ -2,6 +2,11 @@
 
 ## We'll take a look at the **threading** and **pdb** and try some exercises ##
 
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
 The following should be a math block:
 
 You can take a look at the **threading** module for the python standard library.
@@ -332,4 +337,5 @@ The module has nearly all functions corresponding to that of the
 more expensive than threads. Refer to links for further reading.
 
 ### Threading v Multiprocessing exercise
-- **For a client server architecture mentioned earlier, convert the program to use the multiprocessing module**.
+- **For a client server architecture mentioned earlier, write the same program with multiprocessing**
+
