@@ -1,10 +1,10 @@
 theme: jekyll-theme-slate
 title: "IT Lab 2018"
 description: "These are the notes and exercises for the ITLAB 2018, for SCIS, UoH."
-include: _includes/scripts.html
+include: scripts.html
 
 # # Where things are
-source:          .
+# source:          .
 # destination:     ./_site
 # collections_dir: .
 # plugins_dir:     _plugins

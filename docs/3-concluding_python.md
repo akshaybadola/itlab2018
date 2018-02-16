@@ -1,4 +1,4 @@
-{% include _includes/scripts.html %}
+{% include scripts.html %}
 
 # Threads, Generators and pdb #
 
