@@ -7,7 +7,7 @@ title: Concluding Python
 ## We'll take a look at the **threading** and **pdb** and try some exercises ##
 
 You can take a look at the **threading** module for the python standard library.
-({{https://docs.python.org/3/library/threading.html}})
+https://docs.python.org/3/library/threading.html
 
 
 ### 1. First we'll take a look at the **threading** module
