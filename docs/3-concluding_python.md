@@ -5,9 +5,11 @@
 
 The following should be a math block:
 
-$$\lambda_i=\lambda_j$$
+$$
+\lambda_i=\lambda_j
+$$
 
-But it's not, it's just not \$$ 5 + 5 $$
+But it's not, it's just not \$$ \lambda_i = \lambda_j $$. Does this work?
 
 
 You can take a look at the **threading** module for the python standard library.
