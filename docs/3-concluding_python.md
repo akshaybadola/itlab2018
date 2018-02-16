@@ -2,6 +2,10 @@
 
 ## We'll take a look at the **threading** and **pdb** and try some exercises ##
 
+<script async type="text/javascript"
+	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 You can take a look at the **threading** module for the python standard library.
 <https://docs.python.org/3/library/threading.html>
 
