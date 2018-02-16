@@ -1,4 +1,8 @@
-# Lab 3 Regex, File and URL Handling #
+---
+title: Regex, File and URL Handling
+---
+
+# Regex, File and URL Handling #
 
 ## First we'll look at some regular expression
 ## Then we'll try some exercises 
