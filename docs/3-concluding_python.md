@@ -1,5 +1,3 @@
-{% include _includes/scripts.html %}
-
 # Threads, Generators and pdb #
 
 ## We'll take a look at the **threading** and **pdb** and try some exercises ##
