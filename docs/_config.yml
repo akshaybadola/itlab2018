@@ -3,5 +3,7 @@ markdown: kramdown
 kramdown:
     input: GFM
     hard_wrap: false
+    math_engine: mathjax
+    syntax_highlighter: rogue
 title: "IT Lab 2018"
 description: "These are the notes and exercises for the ITLAB 2018, for SCIS, UoH."

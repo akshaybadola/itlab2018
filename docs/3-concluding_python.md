@@ -1,7 +1,3 @@
----
-title: Concluding Python
----
-
 # Threads, Generators and pdb #
 
 ## We'll take a look at the **threading** and **pdb** and try some exercises ##
@@ -319,4 +315,9 @@ do modifications like rotate images or switch the color channels.
 
 ## Nuances of Threading in Python ##
 
-So far we've used the **threading** library in python
+So far we've used the **threading** library in python, which provides
+light weight concurrency. However, there would be issues with running
+multiple threads on the Python interpreter as it is not
+thread-safe. <https://docs.python.org/3/c-api/init.html#thread-state-and-the-global-interpreter-lock>
+
+Threads created 
