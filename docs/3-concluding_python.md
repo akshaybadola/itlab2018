@@ -1,5 +1,5 @@
 ---
-title: IT Lab 2018 | Concluding Python
+title: Concluding Python
 ---
 
 # Threads, Generators and pdb #
