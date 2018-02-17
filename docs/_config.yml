@@ -1,7 +1,18 @@
+source:          .
+includes_dir:    _includes
+include: ["_includes/scripts.html", "scripts.html"]
+
+markdown:    kramdown
+highlighter: rouge
+
+kramdown:
+   input:          GFM
+   hard_wrap:      false
+
 theme: jekyll-theme-slate
 title: "IT Lab 2018"
 description: "These are the notes and exercises for the ITLAB 2018, for SCIS, UoH."
-include: _includes/scripts.html
+
 
 # # Where things are
 # source:          .
@@ -10,7 +21,7 @@ include: _includes/scripts.html
 # plugins_dir:     _plugins
 # layouts_dir:     _layouts
 # data_dir:        _data
-includes_dir:    _includes
+# includes_dir:    _includes
 # collections:
 #   posts:
 #     output:   true
