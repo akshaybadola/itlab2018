@@ -1,6 +1,5 @@
 source:          .
 includes_dir:    _includes
-include: ["_includes/scripts.html", "scripts.html"]
 
 markdown:    kramdown
 highlighter: rouge
