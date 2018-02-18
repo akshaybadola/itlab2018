@@ -1,7 +1,3 @@
----
-title: Regex, File and URL Handling
----
-
 # Regex, File and URL Handling #
 
 ## First we'll look at some regular expression
