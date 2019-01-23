@@ -17,10 +17,10 @@ from threading import Thread
 # or import threading.Thread
 ```
 
-Python threads have locks, lifetimes, contexts, names and everything else that you expect of a standard thread. They are
-threads in every sense of the way. There are various functions in the **threading** module which you can use to check
-the various properties of the currently active threads. You can look at the **threading** library reference to find
-them.
+Python threads have locks, lifetimes, contexts, names and everything else that you expect of a
+standard thread. They are threads in every sense of the way. There are various functions in the
+**threading** module which you can use to check the various properties of the currently active
+threads. You can look at the **threading** library reference to find them.
 
 #### 1. Thread
 
@@ -47,8 +47,8 @@ t.start()
 t.join()
 ```
 
-The above is a simple example of thread creation. To spawn multiple threads for the same function we have to create and
-call them. The following code does that.
+The above is a simple example of thread creation. To spawn multiple threads for the same function we
+have to create and call them. The following code does that.
 
 
 ```python
@@ -108,13 +108,15 @@ Will the execution wait while _goo_ sleeps or will _foo_ execute first and leave
 The problems with threads in python are the same with threads in any environment: Synchronization, Deadlocks, Race
 Conditions.
 
-We won't deal with all of those here, as Deadlocks and Race Conditions can be solved with an algorithmic approach, but
-Synchronization is one thing which we'll see how to deal with in python3.
+We won't deal with all of those here, as Deadlocks and Race Conditions can be solved with an
+algorithmic approach, but Synchronization is one thing which we'll see how to deal with in python3.
 
 Consider a scenario of a Client-Server response type mechanism:
-- There are k servers and each can serve at most m clients at a time. (In the general case it would be $$m_1, m_2, ..., m_k$$, one value for each server)
-- Consider a fact that you want at most $$n < km$$ threads to be active at any given moment.
-- You'd have  to keep track of which of the threads are active and assign them tasks as the client requests come in to the servers.
+- There are k servers and each can serve at most m clients at a time. (In the general case it would
+  be $m_1, m_2, ..., m_k$, one value for each server)
+- Consider a fact that you want at most $n < km$ threads to be active at any given moment.
+- You'd have to keep track of which of the threads are active and assign them tasks as the client
+  requests come in to the servers.
 
 ```python
 class Server:
@@ -144,9 +146,10 @@ class Client:
         servers[server_id].request()
 ```
 
-- **Write code to generate a list of clients with ids 1 - 100, which in turn each request the server with request_server
-  method in a random order and at random times. Adapt the following code to implement random requests. You have to find
-  out which server has the least load and you have to fill in all the required code.**
+- Write code to generate a list of clients with ids 1 - 100, which in turn each request the server
+  with request_server method in a random order and at random times. Adapt the following code to
+  implement random requests. You have to find out which server has the least load and you have to
+  fill in all the required code.
 
 ```python
 # We want to have 5 servers, each of which can handle 5 requests at a time
@@ -164,12 +167,13 @@ for i in range(1000):
     client.request_server("server with least load")
 ```
 
-- **Which problems will you face and how can you solve them?**
+- Which problems will you face and how can you solve them?
 
 ### 2. pdb: The Python Debugger
 
-A debugger can be a program or a module which inspects the code as it runs and keeps track of the function calls and the
-variables present. Debugging in python is done by breaking into the code at runtime with pdb.
+A debugger can be a program or a module which inspects the code as it runs and keeps track of the
+function calls and the variables present. Debugging in python is done by breaking into the code at
+runtime with pdb.
 
 ```python
 import pdb
@@ -224,7 +228,8 @@ Generally the things you'll do is:
 - Evaluate an expression:
   You can do things like perform any expression w.r.t. to any variables present in that scope.
   You can call a function if it exists in the current scope.
-  You can of course always print the current variables in scope  at any interpreter with the `dir()` function and use its output.
+  You can of course always print the current variables in scope at any interpreter with the `dir()`
+  function and use its output.
 - You can go up and down in the calling stack by using `u` and `d` commands.
 - You can print the source at the current scope with `l`.
 - You can continue execution with `c` or restart with `r`.
@@ -232,16 +237,24 @@ Generally the things you'll do is:
 Generally with small code i.e. below a 1000 LOC, it isn't usually that difficult to debug, but if your codebase grows
 above that, you'll need to learn how to use  the debugger.
 
+#### ipdb
+There's another debugger which is slightly friendlier in terms of
+interface, and it's called `ipdb`. It is basically the `ipython`
+interface plus `pdb`. You can get a similar interface if you're trying
+to debug in `ipython` and use `%pdb` magic command.
+
+
 ### 3. Generators and generator expressions
 (Some part of this section is borrowed from <https://wiki.python.org/moin/Generators>)
 
-"Generator functions allow you to declare a function that behaves like an iterator, i.e. it can be used in a for loop."
-What it means, is that usually when you speak of an **iterator**, you're iterating over a structure. But what if you
-were looping over an infinite structure? What if you want to iterate over the same structure but in a random manner?
-What if you wanted to create a sequence instead of iterating over a fixed sequence?
+"Generator functions allow you to declare a function that behaves like an iterator, i.e. it can be
+used in a for loop."  What it means, is that usually when you speak of an **iterator**, you're
+iterating over a structure. But what if you were looping over an infinite structure? What if you
+want to iterate over the same structure but in a random manner?  What if you wanted to create a
+sequence instead of iterating over a fixed sequence?
 
-For all these purposes, you have to use the **iterator** pattern.  You can make any class _iterable_ by adding two
-functions to it: `__iter__` and `__next__`.
+For all these purposes, you have to use the **iterator** pattern.  You can make any class _iterable_
+by adding two functions to it: `__iter__` and `__next__`.
 
 Consider the following code
 ```python
@@ -256,10 +269,11 @@ def firstn(n):
 sum_of_first_n = sum(firstn(1000000))
 ```
 
-The above funtion definition simply generates a list till $$n$$. To sum up such a list, such a list will first have to
-exist and then be summed up. You can also realize that the list doesn't really have to exist to compute the sum, nor to
-use the values of the list in any other scenario. The only condition is that the numbers must be produced in
-sequence. Such a sequence is encapsulated in the _iterable_ pattern.
+The above funtion definition simply generates a list till $n$. To sum up such a list, such a list
+will first have to exist and then be summed up. You can also realize that the list doesn't really
+have to exist to compute the sum, nor to use the values of the list in any other scenario. The only
+condition is that the numbers must be produced in sequence. Such a sequence is encapsulated in the
+_iterable_ pattern.
 
 ```python
 # Using the generator pattern (an iterable)
@@ -281,9 +295,10 @@ class firstn(object):
 sum_of_first_n = sum(firstn(1000000))
 ```
 
-The above code implements the two required functions and now the the type **firstn** can be looped over, as only that is
-required for a loop to run. However, the code above can be simplified significantly as for many situations a lot of the
-tasks are similar. For that we have **generators**. The below code accomplishes the same task as the above one:
+The above code implements the two required functions and now the the type **firstn** can be looped
+over, as only that is required for a loop to run. However, the code above can be simplified
+significantly as for many situations a lot of the tasks are similar. For that we have
+**generators**. The below code accomplishes the same task as the above one:
 
 ```python
 # a generator that yields items instead of returning a list
@@ -296,24 +311,108 @@ def firstn(n):
 sum_of_first_n = sum(firstn(1000000))
 ```
 
-"The performance improvement from the use of generators is the result of the lazy (on demand) generation of values,
-which translates to lower memory usage. Furthermore, we do not need to wait until all the elements have been generated
-before we start to use them. This is similar to the benefits provided by iterators, but the generator makes building
-iterators easy."
+"The performance improvement from the use of generators is the result of the lazy (on demand)
+generation of values, which translates to lower memory usage. Furthermore, we do not need to wait
+until all the elements have been generated before we start to use them. This is similar to the
+benefits provided by iterators, but the generator makes building iterators easy."
 
-Basically the generator object is now producing the numbers on demand instead of from a fixed object. The key part in
-the generator is the `yield()` method which is equivalent to the `__next__` method of the _iterator_.
+Basically the generator object is now producing the numbers on demand instead of from a fixed
+object. The key part in the generator is the `yield()` method which is equivalent to the `__next__`
+method of the _iterator_.
 
-- **Write a generator function which generates an infinite sequence of random numbers between two given numbers.**
-  **How will you use it? When will such a sequence stop?**
+#### Exercise
+- Write a generator function which generates an infinite sequence of random numbers between two
+  given numbers.  How will you use it? When will such a sequence stop?
 
-Generators are often used for batching as you need to loop over the batches of data infinitely (or until you get the
-required result). In a generator you can shuffle the data at each iteration or at the end of the entire set of data, and
-do modifications like rotate images or switch the color channels.
+Generators are often used for batching as you need to loop over the batches of data infinitely (or
+until you get the required result). In a generator you can shuffle the data at each iteration or at
+the end of the entire set of data, and do modifications like rotate images or switch the color
+channels.
 
-### Advanced exercise
-- **Write a generator which takes a set of images and crops random fixed sized patches from a random subset, normalizes
-  them (subtracts by the mean and divides by the standard deviation) and returns it. Use pillow for the image processing tasks**
+#### Advanced exercise
+- Write a generator which takes a set of images and crops random fixed sized patches from a random
+  subset, normalizes them (subtracts by the mean and divides by the standard deviation) and returns
+  it. Use pillow for the image processing tasks
+
+### 4. Interaction with bash
+
+There's a `shutil` command which has some very useful functions to
+interact with the host environment. Host being the operating
+system. It contains simple pythonic interface to common os specific
+tasks like copy, move etc. While `os` also has some of that
+functionality it relies more on system calls and doesn't have the
+versatility of `shutil`.
+
+However often we'd want to interact with the shell in a more intricate
+way. Simply calling a bash command wouldn't be enough and we'd like to
+see what the output was and ensure that our task was completed.
+
+For such things we have `subprocess` module. `subprocess` contains
+classes and functions to call and inspect the output of any bsah
+command available in the system environment.
+
+The primary function which calls a bash command is `Popen`. This
+creates a new process with the given arguments and waits till it
+finishes, pushing the output to the set variable.
+
+```python
+# Example of a simple process that backs up some data
+def backup(dir_dict, remote):
+    results = []
+    for src, dst in dir_list.items():
+        p = Popen(
+            ['rsync', '-axXv', '--delete', '--delete-after',
+             '-e ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null',
+             '10.5.0.81:' + os.path.join(users_home, batch, student) +'/*',
+             '--exclude={*cache*}', os.path.join(local_home, student) + '/'],
+             stdout=PIPE, stderr=PIPE)
+
+        # Or easier way
+        p = Popen(('rsync -axXv --delete %s -e ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null %s:%s'
+                   % (src, remote, dst)).split(), stdout=PIPE, stderr=PIPE)
+        out, err = p.communicate()
+        results.append([src, dst, out.decode('utf-8'), err.decode('utf-8')])
+```
+
+A more involved example can handle cases of missing directories and
+connection drops depending on what the output in `out` and `err` is.
+
+The simpler version of `Popen` is `run` which runs the command and
+displays the output on to the screen.
+       
+#### Exercise 
+  * Write a python program that calculates the directory usage of various directories and displays to the user if the usage exceeds 1GB for a given directory.
+
+#### Slightly more difficult Exercise
+  * Call to Popen is always blocking sometimes you may want to pre-empt it. 
+    Consider a machine learning program that uses an external command `useful_command` to perform
+    some auxiliary task on some data.
+    This command emits everything to standard output/error and has no other way to debug. And it
+    accepts certain parameters which need to be changed every now and then and the process may have
+    to be restarted based on the output, with maybe some different parameters (say learning rate or
+    some other tweak).
+    Since you won't really know what the output will be until it completes, you can't pre-empt
+    it. However `Thread` may help.
+    Write a program that accomplishes such a task.
+
+
+
+
+### 5. Logging
+
+Every once in a while you'll wish you had logged the output of a particular program. So you make a
+custom logger, with a lot of `print` statements which can write to file if required. But why do all
+that work if it's already been done?
+
+```python
+import logging
+logging.info('test')
+logging.warn("I'm serious! test!")
+```
+
+#### Exercise
+  *  Just for fun implement a simple logger that is threadsafe, i.e. multiple threads can log
+     simultaneously and prints its output to either stdout or writes it to a file optionally.
 
 ## Nuances of Threading in Python ##
 
@@ -331,6 +430,6 @@ The module has nearly all functions corresponding to that of the
 **threading** library, however it spawns actual processes which are
 more expensive than threads. Refer to links for further reading.
 
-### Threading v Multiprocessing exercise
-- **For a client server architecture mentioned earlier, write the same program with multiprocessing**
+#### Threading v Multiprocessing exercise
+  * For a client server architecture mentioned earlier, write the same program with multiprocessing
 
