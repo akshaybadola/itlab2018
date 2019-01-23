@@ -1,14 +1,11 @@
-{% include scripts.html %}
+# A few (really) useful modules #
 
-# Threads, Generators and pdb #
+## We'll take a look at a few modules which may be needed often and try some exercises ##
 
-## We'll take a look at the **threading** and **pdb** and try some exercises ##
+### 1. First we'll take a look at the **threading** module
 
 You can take a look at the **threading** module for the python standard library.
 <https://docs.python.org/3/library/threading.html>
-
-
-### 1. First we'll take a look at the **threading** module
 
 The primary way to create a thread from the library is the **Thread** class
 
